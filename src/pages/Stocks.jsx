@@ -1,9 +1,11 @@
+import React from 'react'
+
 function Stocks() {
   return (
-    <div>
-      <h2>Share Market Dashboard</h2>
-      <p>Stock market prices will appear here.</p>
+    <div>Stocks
+      <h1>Coming Soon....</h1>
     </div>
-  );
+  )
 }
-export default Stocks;
+
+export default Stocks

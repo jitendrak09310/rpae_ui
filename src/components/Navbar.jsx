@@ -1,12 +1,14 @@
 function Navbar() {
   return (
     <nav>
-      <a href="/">Crypto</a>
-      <a href="/gold">Gold</a>
-      <a href="/stocks">Share Market</a>
-      <a href="/forex">Forex</a>
-      <a href="/alerts">Alerts</a>
-      <a href="/settings">Settings</a>
+      <a href="/crypto">Crypto</a>
+      <a href="/metals">Metals</a>
+      <a href="/commodities">Commodities</a>
+      <a href="/mutualFunds">Mutual Funds</a>
+      <a href="/announcements">Announcements</a>
+      <a href="/news">News</a>
+      <a href="/stocks" >Share Market</a>
+
     </nav>
   );
 }

@@ -1,0 +1,42 @@
+#gold-item {
+  position: relative;
+  background-image: url("../../src/images/gold1.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#gold-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75));
+}
+
+#gold-item * {
+  position: relative;
+  z-index: 1;
+}
+
+table {
+  background: rgba(20, 20, 20, 0.85);
+  border-radius: 12px;
+  color: #f5d97b; /* soft gold */
+  backdrop-filter: blur(6px);
+  overflow: hidden;
+}
+
+th {
+  background: linear-gradient(90deg, #b8860b, #ffd700);
+  color: black;
+  font-weight: 600;
+}
+
+td {
+  color: #f5f5f5;
+}
+
+tr:hover {
+  background: rgba(255, 215, 0, 0.08);
+}

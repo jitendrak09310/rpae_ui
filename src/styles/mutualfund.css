@@ -1,0 +1,187 @@
+.mf-wrapper {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.mf-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.mf-header h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.last-fetched {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+}
+
+.refresh-btn {
+  padding: 8px 16px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.refresh-btn:hover {
+  background: #333;
+}
+
+/* Filters */
+.mf-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.filter-group label {
+  font-weight: 600;
+  font-size: 13px;
+  min-width: 90px;
+  color: #333;
+}
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.filter-tabs button {
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+}
+.filter-tabs button:hover {
+  background: #f0f0f0;
+  color: #000;
+}
+.filter-tabs button.active {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+.result-count {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* Table */
+.table-scroll {
+  overflow-x: auto;
+}
+
+.mf-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  border: 1px solid #ccc;
+}
+.mf-table th {
+  background: #000;
+  color: #fff;
+  padding: 12px 14px;
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+}
+.mf-table td {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  text-align: center;
+  white-space: nowrap;
+  color: #333;
+}
+.mf-table tbody tr:nth-child(even) td {
+  background: #f9f9f9;
+}
+.mf-table tbody tr:hover td {
+  background: #f0f0f0;
+}
+
+.fund-name {
+  text-align: left !important;
+  font-weight: 500;
+  min-width: 260px;
+  white-space: normal !important;
+}
+.price {
+  font-family: monospace;
+}
+.positive {
+  color: green;
+  font-weight: 500;
+}
+.negative {
+  color: red;
+  font-weight: 500;
+}
+.star-rating {
+  color: #f5a623;
+  letter-spacing: 2px;
+}
+
+/* Status */
+.status-msg {
+  padding: 20px;
+  text-align: center;
+}
+.status-msg.error {
+  color: red;
+}
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  gap: 6px;
+  margin-top: 16px;
+  justify-content: center;
+}
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 13px;
+}
+.pagination button:hover:not(:disabled) {
+  background: #f0f0f0;
+}
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.pagination button.active {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
