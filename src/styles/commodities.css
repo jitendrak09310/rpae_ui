@@ -88,13 +88,15 @@
   font-family: monospace;
 }
 
-.positive {
-  color: green;
+.commodities-table td.positive,
+.commodities-table tbody tr td.positive {
+  color: #16a34a !important;
   font-weight: 500;
 }
 
-.negative {
-  color: red;
+.commodities-table td.negative,
+.commodities-table tbody tr td.negative {
+  color: #dc2626 !important;
   font-weight: 500;
 }
 

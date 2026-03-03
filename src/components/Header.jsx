@@ -1,7 +1,8 @@
 function Header() {
   return (
     <header>
-      Real-Time Price Aggregator & Alert Engine (RPAE)
+      <span>Real-Time Price Aggregator & Alert Engine (RPAE)</span>
+      <span>Jitendra Kashyap</span>
     </header>
   );
 }

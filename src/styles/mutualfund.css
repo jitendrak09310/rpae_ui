@@ -122,6 +122,23 @@
   background: #f0f0f0;
 }
 
+/* positive / negative — must come AFTER all td rules to win specificity */
+.mf-table td.positive,
+.mf-table tbody tr td.positive,
+.mf-table tbody tr:nth-child(even) td.positive,
+.mf-table tbody tr:hover td.positive {
+  color: #16a34a;
+  font-weight: 500;
+}
+
+.mf-table td.negative,
+.mf-table tbody tr td.negative,
+.mf-table tbody tr:nth-child(even) td.negative,
+.mf-table tbody tr:hover td.negative {
+  color: #dc2626;
+  font-weight: 500;
+}
+
 .fund-name {
   text-align: left !important;
   font-weight: 500;
@@ -130,14 +147,6 @@
 }
 .price {
   font-family: monospace;
-}
-.positive {
-  color: green;
-  font-weight: 500;
-}
-.negative {
-  color: red;
-  font-weight: 500;
 }
 .star-rating {
   color: #f5a623;
@@ -150,7 +159,7 @@
   text-align: center;
 }
 .status-msg.error {
-  color: red;
+  color: #dc2626;
 }
 .no-data {
   text-align: center;
@@ -169,6 +178,7 @@
   padding: 6px 12px;
   border: 1px solid #ddd;
   background: #fff;
+  color: #333;
   cursor: pointer;
   border-radius: 4px;
   font-size: 13px;
